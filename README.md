@@ -48,9 +48,9 @@
 > Thông số `AVG SNR` - **(The average value of Signal to Noise Ratio)** trong app sẽ cho bạn biết điều này. Với dãi đo *"từ 0 đến 99dB"*. Nó cho biết *"tỷ lệ tín hiệu GPS trên nhiễu"*.
 >
 > Trong đó **0** là *"tệ nhất"*. Thông thường SNR sẽ không bao giờ vượt quá trên **50** và từ **40** trở lên đã là *"rất tốt"*. Thử nghiệm thực tế:
-> - Test trong nhà, tuy có phát hiện được vài chục vệ tinh *(In View > 0)*, nhưng không thể nhận được bất kỳ thông tin đầy đủ nào từ các vệ tinh cả *(In Use = 0)*.<br>![Test app trong nhà](/img/Test_App_InDoor.png "Test app trong nhà")
-> - Test ngoài đường trước nhà, cần chờ khoảng thời gian hơn một phút. Lúc này, thường đã có thể nhận được thông tin đầy đủ từ vài vệ tinh *(In Use > 0)*. Chỉ số **SNR** dao động trong *"vùng cam từ 10 đến 20dB"*.<br>![Test app ngoài đường](/img/Test_App_OutDoor.png "Test app ngoài đường")
-> - Test trên sân thượng, tầm vài chục giây là định vị được. Số lượng vệ tinh sử dụng tăng cao *(In Use > 0)*. Chỉ số **SNR** dao động trong *"vùng vàng từ 20 đến 30dB"*.<br>![Test app trên tầng thượng.png](/img/Test_App_On_Rooftop.png "Test app trên tầng thượng.png")
+> - Test trong nhà, tuy có phát hiện được vài chục vệ tinh *(In View > 0)*, nhưng không thể nhận được bất kỳ thông tin đầy đủ nào từ các vệ tinh cả *(In Use = 0)*.<br>![Test app trong nhà](/image/Test_App_InDoor.png "Test app trong nhà")
+> - Test ngoài đường trước nhà, cần chờ khoảng thời gian hơn một phút. Lúc này, thường đã có thể nhận được thông tin đầy đủ từ vài vệ tinh *(In Use > 0)*. Chỉ số **SNR** dao động trong *"vùng cam từ 10 đến 20dB"*.<br>![Test app ngoài đường](/image/Test_App_OutDoor.png "Test app ngoài đường")
+> - Test trên sân thượng, tầm vài chục giây là định vị được. Số lượng vệ tinh sử dụng tăng cao *(In Use > 0)*. Chỉ số **SNR** dao động trong *"vùng vàng từ 20 đến 30dB"*.<br>![Test app trên tầng thượng.png](/image/Test_App_On_Rooftop.png "Test app trên tầng thượng.png")
 >
 > Tuy nhiên bạn cần lưu ý, cách kiểm tra này mang tính chất tương đối. Vì nó còn phụ thuộc vào tùy khu vực, hay chất lượng công nghệ của điện thoại.
 
