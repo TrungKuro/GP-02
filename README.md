@@ -65,9 +65,9 @@
 > Ngoài ra các điều kiện khác nhau có thể ảnh hưởng đến TTFF, bao gồm môi trường và liệu thiết bị GPS có ở trong nhà hay bên ngoài, không có các vật cản giữa thiết bị và vệ tinh.
 >
 > **TTFF** thường được chia thành **3** loại:
-> - `Khởi động *"Cold"*`, đề cập đến tình huống mà thiết bị GPS phải thu thập tất cả dữ liệu để bắt đầu điều hướng.<br>_ Chế độ này được dùng cho những thiết bị mới hoặc đã được khôi phục về cài đặt gốc.<br>_ Cho nên thời gian khởi động lần đầu tiên thường khá lâu.
-> - `Khởi động *"Warm"*`, lúc này GPS có hầu hết dữ liệu cần thiết trong bộ nhớ.<br>_ Nên thời gian khởi động nhanh hơn nhiều, tầm 1 phút hoặc ít hơn.<br>_ Chế độ này nên dùng khi thiết bị đã tắt trong một ngày hoặc lâu hơn, nhưng không tắt lâu đến mức dữ liệu của nó cực kỳ lỗi thời.
-> - `Khởi động *"Hot"*`, lúc này GPS cũng đã có hầu hết dữ liệu cần thiết trong bộ nhớ.<br>_ Vì thiết bị này thường tắt chỉ trong vài giờ, dữ liệu thời gian - lịch vẫn còn giá trị sử dụng.<br>_ Nên thời gian khởi động rất là nhanh, tầm vài giây.
+> - `Khởi động "Cold"`, đề cập đến tình huống mà thiết bị GPS phải thu thập tất cả dữ liệu để bắt đầu điều hướng.<br>_ Chế độ này được dùng cho những thiết bị mới hoặc đã được khôi phục về cài đặt gốc.<br>_ Cho nên thời gian khởi động lần đầu tiên thường khá lâu.
+> - `Khởi động "Warm"`, lúc này GPS có hầu hết dữ liệu cần thiết trong bộ nhớ.<br>_ Nên thời gian khởi động nhanh hơn nhiều, tầm 1 phút hoặc ít hơn.<br>_ Chế độ này nên dùng khi thiết bị đã tắt trong một ngày hoặc lâu hơn, nhưng không tắt lâu đến mức dữ liệu của nó cực kỳ lỗi thời.
+> - `Khởi động "Hot"`, lúc này GPS cũng đã có hầu hết dữ liệu cần thiết trong bộ nhớ.<br>_ Vì thiết bị này thường tắt chỉ trong vài giờ, dữ liệu thời gian - lịch vẫn còn giá trị sử dụng.<br>_ Nên thời gian khởi động rất là nhanh, tầm vài giây.
 >
 > Để lưu trữ những dữ liệu này trong bộ nhớ khi Module ngắt nguồn. Ta cần gắn thêm PIN làm nguồn dự phòng cho nó (`PIN CR2032`).
 
