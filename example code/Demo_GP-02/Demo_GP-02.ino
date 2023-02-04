@@ -1,5 +1,15 @@
+/**
+ * This sample sketch demonstrates the normal use
+ *  of a TinyGPSPlus (TinyGPSPlus) object.
+ *
+ * It requires the use of SoftwareSerial
+ *  and assumes that you have a 9600-baud serial GPS device
+ *  hooked up on pins 2(rx) and 3(tx).
+ */
 #include <TinyGPSPlus.h>
 #include <SoftwareSerial.h>
+
+/* ------------------------------------------------------------------------- */
 
 /**
  * ### Connection diagrams
@@ -9,32 +19,6 @@
  * 5V     :  5V
  * TX     :  D2
  * RX     :  D3
- *
- * ### Result received
- *
- * A simple demonstration of TinyGPSPlus with an attached GPS module
- * Testing TinyGPSPlus library v. 1.0.3
- * by Mikal Hart
- *
- * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:28.00
- * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:29.00
- * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:29.00
- * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:29.00
- * ...
  */
 static const int RXPin = 2, TXPin = 3;
 static const uint32_t GPSBaud = 9600;
@@ -45,8 +29,11 @@ TinyGPSPlus gps;
 // The serial connection to the GPS device
 SoftwareSerial ss(RXPin, TXPin);
 
+/* ------------------------------------------------------------------------- */
+
 void setup()
 {
+  // Note, select Baud rate 115200 bps on Serial Monitor of IDE Arduino
   Serial.begin(115200);
   ss.begin(GPSBaud);
 
@@ -126,3 +113,33 @@ void displayInfo()
 
   Serial.println();
 }
+
+/* ------------------------------------------------------------------------- */
+
+/**
+ * ### Result received
+ *
+ * A simple demonstration of TinyGPSPlus with an attached GPS module
+ * Testing TinyGPSPlus library v. 1.0.3
+ * by Mikal Hart
+ *
+ * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: INVALID 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:28.00
+ * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:29.00
+ * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:29.00
+ * Location: 10.773272,106.656715  Date/Time: 2/3/2023 09:56:29.00
+ * ...
+ */
